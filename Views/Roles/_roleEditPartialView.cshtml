@@ -1,0 +1,13 @@
+﻿@model RoleFormModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Adjust the path if needed
+    ViewData["Title"] = "Edit Role";
+}
+<form method="post" asp-action="Edit">
+    <div class="form-group">
+        <label for="Name">Role Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Role</button>
+</form>

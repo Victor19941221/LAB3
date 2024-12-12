@@ -1,0 +1,13 @@
+﻿@model Lab3.Models.ApplicationUser
+
+@if (Model?.ProfilePicture != null)
+{
+    var base64 = Convert.ToBase64String(Model.ProfilePicture);
+    var imgSrc = String.Format("data:image/png;base64,{0}", base64);
+    <img src="@imgSrc" alt="Profile Picture" class="profile-picture" />
+}
+else
+{
+    <!-- Display a default profile picture if none is uploaded -->
+    <img src="~/images/default-profile.png" alt="Default Profile Picture" class="profile-picture" />
+}

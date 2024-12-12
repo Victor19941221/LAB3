@@ -1,0 +1,46 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+.profile-picture {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px; 
+    border: 2px solid #fff; 
+}
+
+
+.navbar .nav-item.d-flex.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 576px) {
+    .profile-picture {
+        width: 30px;
+        height: 30px;
+    }
+}

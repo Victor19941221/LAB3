@@ -1,0 +1,31 @@
+﻿@model ManageUserRolesViewModel
+@{
+    ViewData["Title"] = "Manage Roles for User";
+}
+
+<h1>Manage Roles for @Model.UserId</h1>
+
+<form asp-action="UpdateUserRoles" method="post">
+    <input type="hidden" asp-for="UserId" />
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Role Name</th>
+                <th>Assigned</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var role in Model.Roles)
+            {
+                <tr>
+                    <td>@role.Key</td>
+                    <td>
+                        <input type="checkbox" name="Roles[@role.Key]" value="true" @(role.Value ? "checked" : "") />
+                        <input type="hidden" name="Roles[@role.Key]" value="false" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-success">Save Changes</button>
+</form>
