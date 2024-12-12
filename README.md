@@ -93,5 +93,4 @@ This project is an ASP.NET Core web application that provides XYZ functionality.
 ## Additional Information
 
 - **Roles Initialization:** The project automatically seeds some roles (Admin and User) via database migrations.
-- **Admin User:** An admin user may be seeded into the database. Check the migrations or setup instructions for details.
-- **External Logins:** Configure external login providers (like Google, Microsoft) in `Program.cs` by adding the relevant authentication handlers.
+- **Admin User:** An admin user is seeded into the database. Check the migrations  for details.
