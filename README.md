@@ -37,7 +37,7 @@ This project is an ASP.NET Core web application that provides XYZ functionality.
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Victor19941221/Lab3.git
-   cd YourRepoName
+   cd Lab3
    ```
 
 2. **Check `.gitignore` and `appsettings.json`:**
